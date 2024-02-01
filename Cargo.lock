@@ -58,7 +58,7 @@ version = "0.3.6"
 dependencies = [
  "anyhow",
  "bencher",
- "indexmap",
+ "indexmap 2.2.2",
  "once_cell",
  "rand",
  "rand_chacha",
@@ -316,7 +316,7 @@ dependencies = [
  "bitflags",
  "clap_derive",
  "clap_lex",
- "indexmap",
+ "indexmap 1.9.3",
  "once_cell",
  "strsim",
  "termcolor",
@@ -588,8 +588,14 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a2d328fc287c61314c4a61af7cfdcbd7e678e39778488c7cb13ec133ce0f4059"
 dependencies = [
  "fsio",
- "indexmap",
+ "indexmap 1.9.3",
 ]
+
+[[package]]
+name = "equivalent"
+version = "1.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5443807d6dff69373d433ab9ef5378ad8df50ca6298caf15de6e52e24aaf54d5"
 
 [[package]]
 name = "fastrand"
@@ -749,7 +755,7 @@ dependencies = [
  "futures-sink",
  "futures-util",
  "http",
- "indexmap",
+ "indexmap 1.9.3",
  "slab",
  "tokio",
  "tokio-util",
@@ -770,6 +776,12 @@ checksum = "43a3c133739dddd0d2990f9a4bdf8eb4b21ef50e4851ca85ab661199821d510e"
 dependencies = [
  "ahash",
 ]
+
+[[package]]
+name = "hashbrown"
+version = "0.14.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "290f1a1d9242c78d09ce40a5e87e7554ee637af1351968159f4952f028f75604"
 
 [[package]]
 name = "headers"
@@ -917,6 +929,16 @@ dependencies = [
  "hashbrown 0.12.3",
  "rayon",
  "serde",
+]
+
+[[package]]
+name = "indexmap"
+version = "2.2.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "824b2ae422412366ba479e8111fd301f7b5faece8149317bb81925979a53f520"
+dependencies = [
+ "equivalent",
+ "hashbrown 0.14.3",
 ]
 
 [[package]]
@@ -1760,7 +1782,7 @@ version = "1.0.93"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "cad406b69c91885b5107daf2c29572f6c8cdb3c66826821e286c533490c0bc76"
 dependencies = [
- "indexmap",
+ "indexmap 1.9.3",
  "itoa",
  "ryu",
  "serde",
@@ -1834,7 +1856,7 @@ dependencies = [
  "anyhow",
  "clap",
  "colored",
- "indexmap",
+ "indexmap 1.9.3",
  "once_cell",
  "parking_lot",
  "rand",
@@ -1929,7 +1951,7 @@ name = "snarkvm-circuit-environment"
 version = "0.9.14"
 source = "git+https://github.com/AleoHQ/snarkVM?rev=74ff5ed#74ff5ed022abcc2a6dd0828983d945d00dd7534b"
 dependencies = [
- "indexmap",
+ "indexmap 1.9.3",
  "itertools",
  "nom",
  "num-traits",
@@ -2116,7 +2138,7 @@ version = "0.9.14"
 source = "git+https://github.com/AleoHQ/snarkVM?rev=74ff5ed#74ff5ed022abcc2a6dd0828983d945d00dd7534b"
 dependencies = [
  "anyhow",
- "indexmap",
+ "indexmap 1.9.3",
  "itertools",
  "lazy_static",
  "once_cell",
@@ -2157,7 +2179,7 @@ source = "git+https://github.com/AleoHQ/snarkVM?rev=74ff5ed#74ff5ed022abcc2a6dd0
 dependencies = [
  "enum_index",
  "enum_index_derive",
- "indexmap",
+ "indexmap 1.9.3",
  "num-derive",
  "num-traits",
  "once_cell",
@@ -2296,7 +2318,7 @@ dependencies = [
  "colored",
  "curl",
  "hex",
- "indexmap",
+ "indexmap 1.9.3",
  "itertools",
  "lazy_static",
  "parking_lot",
@@ -2319,7 +2341,7 @@ dependencies = [
  "anyhow",
  "cfg-if",
  "fxhash",
- "indexmap",
+ "indexmap 1.9.3",
  "itertools",
  "snarkvm-curves",
  "snarkvm-fields",
@@ -2336,7 +2358,7 @@ dependencies = [
  "anyhow",
  "blake2",
  "colored",
- "indexmap",
+ "indexmap 1.9.3",
  "once_cell",
  "parking_lot",
  "paste",

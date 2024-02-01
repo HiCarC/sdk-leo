@@ -32,7 +32,7 @@ harness = false
 version = "1"
 
 [dependencies.indexmap]
-version = "1.9.3"
+version = "2.2.2"
 
 [dependencies.once_cell]
 version = "1.13.1"
